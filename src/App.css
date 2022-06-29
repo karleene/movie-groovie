@@ -68,7 +68,7 @@ main {
 }
 
 .movieList {
-  background-color: dimgrey;
+  background-color: lightpink;
   padding: 10px;
   margin: 30px;
   border-radius: 15px;
@@ -81,13 +81,14 @@ main {
 
 .movieList h2 {
   font-family: 'Berkshire Swash', cursive;
-  color: floralwhite;
+  color: darkslategray;
   font-size: 1rem;
+  text-align: center;
 
 }
 
 .movieList p { 
-  color: floralwhite;
+  color: darkslategray;
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
   text-align: justify;
@@ -97,11 +98,31 @@ main {
 .movieList img {
   max-width: 50%;
 }
+
+.save {
+  background-color: lightpink;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.save:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+}
 
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+  .movieList {
+      width: 85%;
+    }
+
+}
