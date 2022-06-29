@@ -74,10 +74,10 @@ const Form = () => {
                         ? movies.map((movie) => {
                             return (
                                 <li key={movie.id} className="movieList">
+                                    <button className="save">✔️</button>
                                     <h2>{movie.original_title}</h2>
                                     <img src={`https://image.tmdb.org/t/p/w300${movie.poster_path}`} alt={movie.original_title} />
                                     <p>{movie.overview}</p>
-                                    <button className="save">✔️</button>
                                 </li>
                             )
                         })

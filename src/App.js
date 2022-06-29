@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Form from './Form';
+import Footer from './Footer';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
         <Header />
         <Form />
       </div>
+        <Footer />
     </div>
   );
 }

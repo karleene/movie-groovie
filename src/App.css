@@ -110,6 +110,18 @@ main {
   font-size: 1.4rem;
 }
 
+footer p {
+  color: floralwhite;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer a {
+  color: lightpink;
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {}
 
