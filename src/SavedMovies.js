@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 const SavedMovies = (props) => {
     return(
         <section className="savedMovies">
-            <Link to={'/'}><button className="back">Back</button></Link>
+            <Link to={'/'}><button className="back">⬅️Back</button></Link>
             <ul className="savedMoviesContainer">
                 {props.savedMovies.map((savedMovie) => {
                     console.log(savedMovie);

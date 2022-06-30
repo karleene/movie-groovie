@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 import firebase from './firebase';
 import { getDatabase, push, ref, onValue, remove } from 'firebase/database';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from './Header';
 import Form from './Form';
 import SavedMovies from './SavedMovies';

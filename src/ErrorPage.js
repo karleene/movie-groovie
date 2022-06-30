@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const ErrorPage = () => {
     return (
-        <div>
-            <h2>404!</h2>
+        <div className="errorPage">
+            <h3>404!</h3>
             <p>Not all those who wander are lost, but you seem to be looking for a page that doesn't exist.</p>
             <Link to={`/`}>
-                <h2>Back</h2>
+                <p>⬅️</p>
             </Link>
         </div>
     )

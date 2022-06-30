@@ -24,9 +24,11 @@ body {
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* buttons hover effect credit: https: //codepen.io/derekmorash/pen/XddZJY */
+
+/* Header styling starts here */
 h1 {
   background-color: black;
   font-family: 'Berkshire Swash', cursive;
@@ -48,7 +50,9 @@ h1 {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+/* Header styling ends here */
 
+/* Form styling starts here */
 select {
   margin: 5px 0;
   padding: 10px;
@@ -103,13 +107,86 @@ main {
   background-color: lightpink;
   border: none;
   font-size: 1.2rem;
+  box-shadow: 0 0 40px 40px lightpink inset, 0 0 0 0 lightpink;
+  transition: all 150ms ease-in-out;
 }
 
 .save:hover {
   cursor: pointer;
   font-size: 1.4rem;
+  box-shadow: 0 0 10px 0 floralwhite inset, 0 0 10px 4px floralwhite;
 }
 
+.view {
+  margin-top: 25px;
+  background-color: lightpink;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 40px 40px lightpink inset, 0 0 0 0 lightpink;
+  transition: all 150ms ease-in-out;
+}
+
+.view:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 lightpink inset, 0 0 10px 4px lightpink;
+}
+
+/* Form styling ends here */
+
+/* SavedMovies styling starts here */
+.savedMovies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back {
+  background-color: lightpink;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 40px 40px lightpink inset, 0 0 0 0 lightpink;
+  transition: all 150ms ease-in-out;
+}
+
+.back:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 lightpink inset, 0 0 10px 4px lightpink;
+}
+
+.remove {
+  background-color: lightpink;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0 0 40px 40px lightpink inset, 0 0 0 0 lightpink;
+  transition: all 150ms ease-in-out;
+}
+
+.remove:hover {
+  cursor: pointer;
+  font-size: 1.4rem;
+  box-shadow: 0 0 10px 0 floralwhite inset, 0 0 10px 4px floralwhite;
+}
+/* SavedMovies styling ends here */
+
+/* Errorpage styling starts here */
+h3 {
+  text-align: center;
+  font-size: 4rem;
+  color: floralwhite;
+}
+
+.errorPage p {
+  text-align: center;
+  font-size: 2rem;
+  color: floralwhite;
+}
+/* Errorpage styling ends here */
+
+
+/* Footer styling starts here */
 footer {
   margin-top: 25px;
 }
@@ -117,8 +194,8 @@ footer {
 footer p {
   background-color: floralwhite;
   opacity: 0.8;
-  padding: 15px 0;
-  margin-bottom: -0.4rem;
+  padding: 10px 0;
+  margin-bottom: 0rem;
   font-size: 0.8rem;
   color: dimgray;
   text-align: center;
@@ -132,6 +209,7 @@ footer a {
   color: indianred;
   cursor: pointer;
 }
+/* Footer styling ends here */
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {}
@@ -144,8 +222,7 @@ footer a {
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
-  .movieList {
+  .movieList, .savedMovieList {
       width: 75%;
     }
-
 }
