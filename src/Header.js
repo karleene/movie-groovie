@@ -1,6 +1,8 @@
+import {Link} from 'react-router-dom';
+
 const Header = () => {
     return(
-        <h1>Movie Groovie</h1>
+        <Link style={{ textDecoration: 'none' }} to={'/'}><h1>Movie Groovie</h1></Link>
     )
 }
 

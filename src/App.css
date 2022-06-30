@@ -61,13 +61,13 @@ main {
   align-items: center;
 }
 
-.movieContainer {
+.movieContainer, .savedMoviesContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.movieList {
+.movieList, .savedMovieList {
   background-color: lightpink;
   padding: 10px;
   margin: 30px;
@@ -79,7 +79,7 @@ main {
   width: 40%;
 }
 
-.movieList h2 {
+.movieList h2, .savedMovieList h2 {
   font-family: 'Berkshire Swash', cursive;
   color: darkslategray;
   font-size: 1rem;
@@ -87,7 +87,7 @@ main {
 
 }
 
-.movieList p { 
+.movieList p, .savedMovieList p { 
   color: darkslategray;
   font-family: 'Roboto', sans-serif;
   font-size: 0.8rem;
@@ -95,7 +95,7 @@ main {
   padding: 0 30px;
 }
 
-.movieList img {
+.movieList img, .savedMovieList img {
   max-width: 50%;
 }
 
@@ -110,8 +110,17 @@ main {
   font-size: 1.4rem;
 }
 
+footer {
+  margin-top: 25px;
+}
+
 footer p {
-  color: floralwhite;
+  background-color: floralwhite;
+  opacity: 0.8;
+  padding: 15px 0;
+  margin-bottom: -0.4rem;
+  font-size: 0.8rem;
+  color: dimgray;
   text-align: center;
   position: fixed;
   left: 0;
@@ -120,8 +129,10 @@ footer p {
 }
 
 footer a {
-  color: lightpink;
+  color: indianred;
+  cursor: pointer;
 }
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {}
 
@@ -134,7 +145,7 @@ footer a {
 @media (max-width: 480px) {
 
   .movieList {
-      width: 85%;
+      width: 75%;
     }
 
 }
