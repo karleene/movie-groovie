@@ -5,7 +5,7 @@ const SavedMovies = (props) => {
         <section className="savedMovies">
             <Link to={'/'}><button className="back">⬅️Back</button></Link>
             <ul className="savedMoviesContainer">
-                {props.savedMovies.map((savedMovie) => {
+                {props.savedMovies.slice(0).reverse().map((savedMovie) => {
                     console.log(savedMovie);
                     return(
                         <li key={savedMovie.key} className="savedMovieList">
